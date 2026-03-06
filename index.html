@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Nikhil — Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio showcasing projects, skills, and contact information."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-text">Nikhil</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="sr-only">Open menu</span>
+            <span class="nav-toggle-bars" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav-links" id="nav-links">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#languages">Languages</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
+
+            <button class="theme-toggle" type="button" aria-pressed="false" title="Toggle theme">
+              <span class="theme-icon" aria-hidden="true"></span>
+              <span class="theme-label">Theme</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow reveal">Hello, I’m</p>
+            <h1 class="hero-title reveal">
+              Nikhil —
+              <span class="grad-text">logical programmer</span>
+              building reliable full‑stack applications.
+            </h1>
+            <p class="hero-subtitle reveal">
+              I love building end‑to‑end products with MERN + TypeScript. I also enjoy solving DSA
+              problems in C++ and improving my problem‑solving skills every day.
+            </p>
+
+            <div class="hero-cta reveal">
+              <a class="btn btn-primary" href="#projects">View projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact me</a>
+              <a class="btn btn-soft" href="./resume.txt" download>Download resume</a>
+              <button class="btn btn-soft" id="copy-email" type="button" data-email="sinhanikhil366@gmail.com">
+                Copy email
+              </button>
+            </div>
+
+            <div class="hero-meta reveal" role="list">
+              <div class="meta-card" role="listitem">
+                <div class="meta-k">Location</div>
+                <div class="meta-v">India (remote)</div>
+              </div>
+              <div class="meta-card" role="listitem">
+                <div class="meta-k">Focus</div>
+                <div class="meta-v">Full Stack Development</div>
+              </div>
+              <div class="meta-card" role="listitem">
+                <div class="meta-k">Currently</div>
+                <div class="meta-v">Open to work</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="photo-card reveal" aria-label="Profile photo">
+            <div class="photo-frame">
+              <img
+                class="photo"
+                src="./profile-picture.jpeg"
+                alt="Nikhil profile photo"
+                loading="lazy"
+              />
+            </div>
+            <div class="photo-meta">
+              <div class="photo-name">Nikhil</div>
+              <div class="photo-role">Full‑stack Developer</div>
+              <div class="photo-note">
+                <span class="dot" aria-hidden="true"></span>
+                Currently looking for a full‑stack development internship.
+              </div>
+              <div class="photo-actions">
+                <a class="pill" href="https://github.com/uksinha-sudo" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="pill" href="https://www.linkedin.com/in/utkarsh-sinha-46954a321/" target="_blank" rel="noreferrer"
+                  >LinkedIn</a
+                >
+                <a class="pill" href="#contact">Contact</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">About</h2>
+            <p class="section-subtitle">
+              A quick snapshot of who I am and how I work.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card reveal">
+              <h3 class="card-title">Logical programmer</h3>
+              <p class="card-text">
+                I love designing solutions and writing clean, structured code. I enjoy building
+                full‑stack applications (especially backend work) and solving DSA problems in C++.
+              </p>
+              <div class="chips" role="list" aria-label="Strengths">
+                <span class="chip" role="listitem">Problem solving</span>
+                <span class="chip" role="listitem">Full‑stack</span>
+                <span class="chip" role="listitem">DSA in C++</span>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <h3 class="card-title">What I’m looking for</h3>
+              <p class="card-text">
+                I’m currently looking for an internship as a <strong>Full‑stack Developer</strong>
+                where I can work on real features, learn from a team, and sharpen my backend + system
+                building skills.
+              </p>
+              <div class="timeline" role="list" aria-label="Highlights">
+                <div class="timeline-item" role="listitem">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div>
+                    <div class="timeline-title">Backend fundamentals</div>
+                    <div class="timeline-desc">APIs, auth, databases, validation, and clean architecture.</div>
+                  </div>
+                </div>
+                <div class="timeline-item" role="listitem">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div>
+                    <div class="timeline-title">Full‑stack execution</div>
+                    <div class="timeline-desc">From data models → API → frontend integration.</div>
+                  </div>
+                </div>
+                <div class="timeline-item" role="listitem">
+                  <div class="timeline-dot" aria-hidden="true"></div>
+                  <div>
+                    <div class="timeline-title">DSA practice</div>
+                    <div class="timeline-desc">Consistent problem solving in C++ to improve logic.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Tools I use to design, build, and ship.</p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3 class="skill-title">Front-end</h3>
+              <ul class="skill-list">
+                <li>HTML5 / Semantic markup</li>
+                <li>CSS3 / Responsive layouts</li>
+                <li>JavaScript / DOM & APIs</li>
+                <li>ReactJs / Component-based UI</li>
+                <li>NextJS / App routing & SSR</li>
+                <li>TypeScript / Type-safe JavaScript</li>
+                <li>Tailwind / Utility-first CSS</li>
+              </ul>
+            </div>
+            <div class="skill-card reveal">
+              <h3 class="skill-title">Backend & Realtime</h3>
+              <ul class="skill-list">
+                <li>NodeJS / Runtime & tooling</li>
+                <li>ExpressJs / REST APIs</li>
+                <li>Websocket / Realtime updates</li>
+                <li>Socket.io / Realtime messaging</li>
+              </ul>
+            </div>
+            <div class="skill-card reveal">
+              <h3 class="skill-title">Workflow</h3>
+              <ul class="skill-list">
+                <li>Git / GitHub</li>
+                <li>Debugging & devtools</li>
+                <li>Performance basics</li>
+                <li>C++ / Fundamentals & problem solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="languages">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Languages</h2>
+            <p class="section-subtitle">How I communicate and collaborate.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="card reveal">
+              <h3 class="card-title">English</h3>
+              <p class="card-text">
+                Fluent — comfortable with professional communication, documentation, and teamwork.
+              </p>
+              <div class="chips" role="list" aria-label="English proficiency">
+                <span class="chip" role="listitem">Fluent</span>
+                <span class="chip" role="listitem">Professional</span>
+                <span class="chip" role="listitem">Technical writing</span>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <h3 class="card-title">Hindi</h3>
+              <p class="card-text">
+                Mother tongue — I can communicate comfortably and clearly in everyday and professional
+                contexts.
+              </p>
+              <div class="chips" role="list" aria-label="Hindi proficiency">
+                <span class="chip" role="listitem">Mother tongue</span>
+                <span class="chip" role="listitem">Strong communication</span>
+                <span class="chip" role="listitem">Native</span>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <h3 class="card-title">Japanese</h3>
+              <p class="card-text">
+                Learning — improving consistently and building confidence in reading and speaking.
+              </p>
+              <div class="chips" role="list" aria-label="Japanese proficiency">
+                <span class="chip" role="listitem">Learning</span>
+                <span class="chip" role="listitem">Daily practice</span>
+                <span class="chip" role="listitem">Beginner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">What I’ve actually created</h2>
+            <p class="section-subtitle">
+              Real projects I’ve built — full-stack apps, UI clones, and practical tools.
+            </p>
+          </div>
+
+          <div class="projects-grid" id="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-badge">Featured</div>
+                <div class="project-links">
+                  <a class="icon-link" href="https://github.com/" target="_blank" rel="noreferrer"
+                    >Code</a
+                  >
+                  <a class="icon-link" href="https://example.com" target="_blank" rel="noreferrer"
+                    >Live</a
+                  >
+                </div>
+              </div>
+              <h3 class="project-title">Full Stack Task Manager</h3>
+              <p class="project-desc">
+                A MERN stack task manager with authentication, CRUD, and a polished, responsive UI —
+                built with TypeScript end-to-end.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <button class="project-more" type="button" data-project="taskManager">
+                View details
+              </button>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-badge project-badge-soft">Clone</div>
+                <div class="project-links">
+                  <a class="icon-link" href="https://github.com/" target="_blank" rel="noreferrer"
+                    >Code</a
+                  >
+                  <a class="icon-link" href="https://example.com" target="_blank" rel="noreferrer"
+                    >Live</a
+                  >
+                </div>
+              </div>
+              <h3 class="project-title">PayTM Clone</h3>
+              <p class="project-desc">
+                A PayTM-inspired UI clone built in JavaScript with a focus on layout accuracy,
+                responsive sections, and smooth interactions.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <button class="project-more" type="button" data-project="paytm">
+                View details
+              </button>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-top">
+                <div class="project-badge project-badge-warm">Full‑stack</div>
+                <div class="project-links">
+                  <a class="icon-link" href="https://github.com/" target="_blank" rel="noreferrer"
+                    >Code</a
+                  >
+                  <a class="icon-link" href="https://example.com" target="_blank" rel="noreferrer"
+                    >Live</a
+                  >
+                </div>
+              </div>
+              <h3 class="project-title">Full Stack Chatting Application</h3>
+              <p class="project-desc">
+                A MERN + JavaScript chat app with real-time messaging powered by Socket.io, plus a
+                clean UI and practical auth/chat flows.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag">React</span>
+                <span class="tag">Node</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Socket.io</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <button class="project-more" type="button" data-project="chatApp">
+                View details
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Want to work together? Send a message.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="card reveal">
+              <h3 class="card-title">Let’s build something great</h3>
+              <p class="card-text">
+                Replace the email and links with your own. The form is client-side only (no backend),
+                but it validates and opens your email client with a prefilled message.
+              </p>
+
+              <div class="contact-items" role="list">
+                <a class="contact-item" role="listitem" href="mailto:sinhanikhil366@gmail.com">
+                  <span class="contact-k">Email</span>
+                  <span class="contact-v">sinhanikhil366@gmail.com</span>
+                </a>
+                <a class="contact-item" role="listitem" href="https://github.com/uksinha-sudo" target="_blank" rel="noreferrer">
+                  <span class="contact-k">GitHub</span>
+                  <span class="contact-v">github.com/uksinha-sudo</span>
+                </a>
+                <a class="contact-item" role="listitem" href="https://www.linkedin.com/in/utkarsh-sinha-46954a321/" target="_blank" rel="noreferrer">
+                  <span class="contact-k">LinkedIn</span>
+                  <span class="contact-v">linkedin.com/in/utkarsh-sinha</span>
+                </a>
+              </div>
+            </div>
+
+            <form class="form card reveal" id="contact-form" novalidate>
+              <div class="form-row">
+                <label class="label" for="name">Name</label>
+                <input class="input" id="name" name="name" autocomplete="name" required />
+                <div class="field-error" data-error-for="name" aria-live="polite"></div>
+              </div>
+
+              <div class="form-row">
+                <label class="label" for="email">Email</label>
+                <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+                <div class="field-error" data-error-for="email" aria-live="polite"></div>
+              </div>
+
+              <div class="form-row">
+                <label class="label" for="message">Message</label>
+                <textarea class="input textarea" id="message" name="message" rows="5" required></textarea>
+                <div class="field-error" data-error-for="message" aria-live="polite"></div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <button class="btn btn-ghost" type="reset">Reset</button>
+              </div>
+
+              <div class="form-note" id="form-note" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <span class="footer-mark" aria-hidden="true"></span>
+          <span>© <span id="year"></span> Nikhil</span>
+        </div>
+        <a class="back-to-top" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <dialog class="modal" id="project-modal" aria-label="Project details">
+      <form method="dialog" class="modal-inner">
+        <div class="modal-head">
+          <div>
+            <div class="modal-title" id="modal-title">Project</div>
+            <div class="modal-subtitle" id="modal-subtitle"></div>
+          </div>
+          <button class="icon-btn" value="cancel" aria-label="Close modal" type="submit">✕</button>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+        <div class="modal-actions">
+          <a class="btn btn-soft" id="modal-code" href="#" target="_blank" rel="noreferrer">View code</a>
+          <a class="btn btn-primary" id="modal-live" href="#" target="_blank" rel="noreferrer">Live demo</a>
+          <button class="btn btn-ghost" value="cancel" type="submit">Close</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
