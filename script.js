@@ -232,7 +232,7 @@ const PROJECTS = {
         <li>Auth + protected routes (login/signup) and full CRUD flows.</li>
         <li>Responsive UI with clear loading/empty/error states.</li>
       </ul>
-      <p>Replace the links below with your real repo and deployment URL.</p>
+      
     `,
     code: "https://github.com/",
     live: "https://example.com",
@@ -247,7 +247,7 @@ const PROJECTS = {
         <li>Clean components and consistent spacing/typography.</li>
         <li>Smooth hover/active states and practical UI polish.</li>
       </ul>
-      <p>Replace the links below with your real repo and deployment URL.</p>
+      
     `,
     code: "https://github.com/",
     live: "https://example.com",
@@ -262,7 +262,7 @@ const PROJECTS = {
         <li>MERN stack: React + NodeJS + ExpressJs + MongoDB.</li>
         <li>Practical chat flows (users, conversations, messages) with clean UI states.</li>
       </ul>
-      <p>Replace the links below with your real repo and deployment URL.</p>
+     
     `,
     code: "https://github.com/",
     live: "https://example.com",
